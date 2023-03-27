@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Cleanup
-      run: make clean
+      run: rm -f ./src/main.o ./src/mod/mod.o app
       
     - name: Run tests
       run: make test
